@@ -1,20 +1,26 @@
-import { useState, useCallback } from "react"
-import { clsx } from "clsx"
+import React from 'react';
+import { Head } from "minista";
+import { clsx } from "clsx";
+import { withBaseProps, BaseProps } from '@/components/ui/base';
+import "./header.css";
 
-import { Head } from "minista"
+interface HeaderProps extends BaseProps {
+  // ヘッダー固有のプロパティがあれば、ここに追加します
+}
 
-import "./header.css"
-
-
-export default() => {
+function HeaderBase({ ...rest }: HeaderProps) {
   return (
     <>
       <Head>
         <script type="module" src="/src/components/global/header/script.ts" data-minista-entry-name="components/global/header" />
       </Head>
-      <header className={clsx(`c-global-header`, `j-global-header`)}>
+      <header {...rest}>
         <p>Header</p>
       </header>
     </>
-  )
+  );
 }
+
+const Header = withBaseProps(HeaderBase, clsx('c-global-header', 'j-global-header'));
+
+export default Header;

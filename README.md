@@ -22,7 +22,11 @@ npm run dev
 npm run build
 ```
 
-## コーディングルール
+# コーディングルール
 
-- コンポーネントは基本的に`src/components`に配置する
-- ページは基本的に`src/pages`に配置する
+# ページ
+`src/pages`に配置する
+
+# コンポーネント
+コンポーネントは`src/components`に配置する
+
