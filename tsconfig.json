@@ -9,6 +9,12 @@
     "noErrorTruncation": true,
     "jsx": "react-jsx",
     "types": ["minista/client"],
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "baseUrl": "./",
+    "outDir": "./dist",
     "paths": {
       "@/*": ["./src/*"]
     }
