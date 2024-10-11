@@ -1,7 +1,7 @@
 import type { PageProps, Metadata, GlobalProps } from "minista"
 import { Head } from "minista"
 import Icon from "@/components/ui/icon/icon"
-
+import Carousel from "@/components/ui/carousel/carousel"
 export const metadata: Metadata = {
   title: "Home"
 }
@@ -21,12 +21,18 @@ export default function () {
           <span className="text-red-500"><Icon iconId="typescript" /></span>
         </Button>
         <Button>
-          <span>Button</span>
+          <span>Button2</span>
         </Button>
         <Button>
           <span>Button</span>
         </Button>
       </div>
+      <Carousel>
+        <></>
+      </Carousel>
+      <Carousel>
+        <></>
+      </Carousel>
     </>
   )
 }

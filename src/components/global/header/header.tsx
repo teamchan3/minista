@@ -1,7 +1,7 @@
 import React from 'react';
 import { Head } from "minista";
 import { clsx } from "clsx";
-import { withBaseProps, BaseProps } from '@/components/ui/base';
+import { withBaseProps, BaseProps } from '@/components/base';
 import "./header.css";
 
 interface HeaderProps extends BaseProps {

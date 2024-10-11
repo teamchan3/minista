@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon as MinistaIcon } from "minista";
-import { withBaseProps, BaseProps } from '@/components/ui/base';
+import { withBaseProps, BaseProps } from '@/components/base';
 import "./icon.css";
 
 interface IconProps extends BaseProps {

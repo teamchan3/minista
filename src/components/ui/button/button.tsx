@@ -1,6 +1,6 @@
 import { Head } from "minista"
 import "./button.css"
-import { withBaseProps, BaseProps } from '@/components/ui/base';
+import { withBaseProps, BaseProps } from '@/components/base';
 
 interface ButtonProps extends BaseProps {
   tag?: keyof JSX.IntrinsicElements;
