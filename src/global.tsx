@@ -9,6 +9,7 @@ export default function ({ url, title, children }: GlobalProps) {
       <Head>
         <title>{title}</title>
         <meta property="description" content="description" />
+        <script defer src="/src/assets/script.ts" />
       </Head>
       <main>
         <Header />

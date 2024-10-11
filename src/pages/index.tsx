@@ -1,5 +1,5 @@
 import { Head } from "minista"
-
+import Button from "@/components/ui/button/button"
 export default function () {
   return (
     <>
@@ -7,6 +7,9 @@ export default function () {
         <title>Hello!</title>
       </Head>
       <h1 className="text-3xl font-medium">Hello!</h1>
+      <Button>
+        <span>Button</span>
+      </Button>
     </>
   )
 }

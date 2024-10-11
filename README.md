@@ -15,3 +15,14 @@ npm install
 ```bash
 npm run dev
 ```
+
+# ビルド
+
+```bash
+npm run build
+```
+
+## コーディングルール
+
+- コンポーネントは基本的に`src/components`に配置する
+- ページは基本的に`src/pages`に配置する

@@ -1,14 +1,19 @@
 import { clsx } from "clsx"
 
+import { Head } from "minista"
+
 import "./header.css"
 
-export default function () {
+
+export default function() {
   return (
     <>
-      <header className={clsx("c-global-header")}>
+      <Head>
+        <script type="module" src="/src/components/global/header/script.ts" data-minista-entry-name="components/global/header" />
+      </Head>
+      <header className={clsx(`c-global-header`, `j-global-header`)}>
         <p>Header</p>
       </header>
     </>
   )
 }
-
