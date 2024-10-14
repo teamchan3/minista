@@ -1,6 +1,6 @@
 import { Head } from "minista"
 import "./button.css"
-import { withBaseProps, BaseProps } from '@/components/base';
+import { withBaseProps, BaseProps } from '@/components/base'
 
 interface ButtonProps extends BaseProps {
   tag?: keyof JSX.IntrinsicElements;
@@ -11,7 +11,6 @@ function ButtonBase({ tag: Tag = 'a', children, ...rest }: ButtonProps) {
   return (
     <>
       <Head>
-        <script type="module" src="/src/components/ui/button/script.ts" data-minista-entry-name="components/ui/button" />
       </Head>
       <Tag {...rest}>
         {children}
@@ -20,6 +19,6 @@ function ButtonBase({ tag: Tag = 'a', children, ...rest }: ButtonProps) {
   );
 }
 
-const Button = withBaseProps(ButtonBase, 'c-button');
+const Button = withBaseProps(ButtonBase, 'cmp-button');
 
 export default Button;

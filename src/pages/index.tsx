@@ -1,13 +1,13 @@
-import type { PageProps, Metadata, GlobalProps } from "minista"
-import { Head } from "minista"
+import type { Metadata } from "minista"
+import { Head, Image } from "minista"
 import Icon from "@/components/ui/icon/icon"
 import Carousel from "@/components/ui/carousel/carousel"
+import Button from "@/components/ui/button/button"
+import Hero from "@/components/pages/home/hero"
+import Container from "@/components/ui/container/container"
 export const metadata: Metadata = {
   title: "Home"
 }
-
-import Button from "@/components/ui/button/button"
-import Hero from "@/components/pages/home/hero"
 
 export default function () {
   return (
@@ -33,6 +33,9 @@ export default function () {
       <Carousel>
         <></>
       </Carousel>
+      <Container>
+        <Image src="/src/assets/images/150x150.png" alt="150x150" />
+      </Container>
     </>
   )
 }

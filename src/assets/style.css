@@ -1,3 +1,9 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+/* components */
+/* @import "./styles/components/container.css"; */
+
+/* utilities */
+@import "./styles/utilities/clearfix.css";

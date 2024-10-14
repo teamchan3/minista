@@ -14,7 +14,7 @@ class Carousel {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.c-carousel').forEach((element) => {
+  document.querySelectorAll('.cmp-carousel').forEach((element) => {
     new Carousel(element);
   });
 });

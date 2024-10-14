@@ -50,7 +50,7 @@ npm run build
 
 ## コンポーネントで使う CSS
 
-class 名は「c-[ コンポーネント名 ]」とする。
+class 名は「cmp-[ コンポーネント名 ]」とする。
 
 ## コンポーネントで使う JS
 
@@ -58,7 +58,7 @@ class 名は「c-[ コンポーネント名 ]」とする。
 
 ```javascript
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".c-carousel").forEach((element) => {
+  document.querySelectorAll(".cmp-carousel").forEach((element) => {
     new Carousel(element)
   })
 })
