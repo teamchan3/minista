@@ -21,6 +21,6 @@ function HeaderBase({ ...rest }: HeaderProps) {
   );
 }
 
-const Header = withBaseProps(HeaderBase, clsx('cmp-global-header'));
+const Header = withBaseProps(HeaderBase, clsx('c-global-header'));
 
 export default Header;

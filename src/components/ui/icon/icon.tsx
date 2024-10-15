@@ -15,6 +15,6 @@ function IconBase({ iconId, ...rest }: IconProps) {
   );
 }
 
-const Icon = withBaseProps(IconBase, 'cmp-icon');
+const Icon = withBaseProps(IconBase, 'c-icon');
 
 export default Icon;

@@ -29,6 +29,6 @@ function CarouselBase({ children, ...rest }: CarouselProps) {
   );
 }
 
-const Carousel = withBaseProps(CarouselBase, 'cmp-carousel');
+const Carousel = withBaseProps(CarouselBase, 'c-carousel');
 
 export default Carousel;

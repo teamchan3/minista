@@ -1,4 +1,4 @@
-export default {
+const transitionProperty: Record<string, string> = {
   height: "height",
   width: "width",
   color: "color",
@@ -8,4 +8,6 @@ export default {
   "border-radius": "border-radius",
   slide: "opacity, transform",
   "aroma-opened": "opacity, filter",
-};
+}
+
+export default transitionProperty

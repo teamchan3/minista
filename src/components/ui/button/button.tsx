@@ -19,6 +19,6 @@ function ButtonBase({ tag: Tag = 'a', children, ...rest }: ButtonProps) {
   );
 }
 
-const Button = withBaseProps(ButtonBase, 'cmp-button');
+const Button = withBaseProps(ButtonBase, 'c-button');
 
 export default Button;

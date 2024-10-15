@@ -1,4 +1,4 @@
-.cmp-global-header {
+.c-global-header {
   @apply bg-gray-100;
   @apply per:w-[100px/200px];
 }

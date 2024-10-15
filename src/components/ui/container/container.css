@@ -1,3 +1,4 @@
 .c-container {
-  @apply max-w-[1200px] mx-auto;
+  @apply box-content;
+  @apply max-w-container px-container mx-auto;
 }

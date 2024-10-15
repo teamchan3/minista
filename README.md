@@ -50,7 +50,7 @@ npm run build
 
 ## コンポーネントで使う CSS
 
-class 名は「cmp-[ コンポーネント名 ]」とする。
+class 名は「c-[ コンポーネント名 ]」とする。
 
 ## コンポーネントで使う JS
 
@@ -58,7 +58,7 @@ class 名は「cmp-[ コンポーネント名 ]」とする。
 
 ```javascript
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".cmp-carousel").forEach((element) => {
+  document.querySelectorAll(".c-carousel").forEach((element) => {
     new Carousel(element)
   })
 })
@@ -67,3 +67,103 @@ document.addEventListener("DOMContentLoaded", () => {
 のように関連づけるようにする。他のコンポーネントなどに影響が出ないように十分注意する。
 
 # スタイルシート
+
+## 記述のルール
+
+## Custom Variants
+
+### per
+
+```css
+.c-module {
+  @apply per:w-[400px/1000px];
+}
+```
+
+この場合
+
+```css
+.c-module {
+  width: 40%;
+}
+```
+
+と出力される
+
+### vw
+
+```css
+.c-module {
+  @apply vw:text-[20px];
+}
+```
+
+DESIGN_WIDTH が 1280px の場合、
+20px / 1280px \* 100vw = 1.5625vw となるため、
+
+```css
+.c-module {
+  width: 1.5625vw;
+}
+```
+
+と出力される
+
+### vws
+
+```css
+.c-module {
+  @apply vws:text-[20px];
+}
+```
+
+DESIGN_WIDTH_SP が 375px の場合、
+20px / 375px \* 100vw = 5.3333vw となるため、
+
+```css
+.c-module {
+  width: 5.3333vw;
+}
+```
+
+と出力される。
+通常、vws はスマホでのみの適用を想定しているため、
+
+```css
+.c-module {
+  @screen sm/up {
+    @apply vw:text-[20px];
+  }
+  @screen sm/down {
+    @apply vws:text-[40px];
+  }
+}
+```
+
+のように使用するのが正しい。
+
+### rem
+
+```css
+.c-module {
+  @apply rem:text-[20px];
+}
+```
+
+### fluid
+
+```css
+.c-module {
+  @apply fluid:text-[20px/32px];
+}
+```
+
+デフォルトではブレークポイント「sm」から「lg」までの間で、指定したサイズの範囲内でサイズが変化する。
+
+```css
+.c-module {
+  @apply fluid:text-[20px_lg/32px_xl];
+}
+```
+
+のように、「\_（アンダースコア）」を使えば、ブレークポイントを指定できる。

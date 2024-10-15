@@ -1,4 +1,4 @@
-export default {
+const transitionTimingFunction: Record<string, string> = {
   "in-expo": "cubic-bezier(0.95, 0.05, 0.795, 0.035)",
   "out-expo": "cubic-bezier(0.19, 1, 0.22, 1)",
   "in-out-expo": "cubic-bezier(1, 0, 0, 1)",
@@ -16,4 +16,6 @@ export default {
   "in-sine": "cubic-bezier(0.47, 0, 0.745, 0.715)",
   "out-sine": "cubic-bezier(0.39, 0.575, 0.565, 1)",
   "in-out-sine": "cubic-bezier(0.445, 0.05, 0.55, 0.95)",
-};
+}
+
+export default transitionTimingFunction

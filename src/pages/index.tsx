@@ -15,7 +15,18 @@ export default function () {
       <Head>
       </Head>
       <Hero />
-      <h1 className="text-3xl font-medium">Hello!</h1>
+      <h1 className={`
+        font-medium
+        `}>製品・サービス</h1>
+      <p className={`
+        lg/up:text-red-500
+        sm-lg:text-green-500
+        sm/down:text-blue-500
+        `}>hogehoge</p>
+      <p className={`
+        `}>
+          testtext
+      </p>
       <div className="p-10">
         <Button>
           <span className="text-red-500"><Icon iconId="typescript" /></span>
@@ -34,7 +45,9 @@ export default function () {
         <></>
       </Carousel>
       <Container>
-        <Image src="/src/assets/images/150x150.png" alt="150x150" />
+        <div className="per:w-[100px/1680px]">
+          <Image src="/src/assets/images/150x150.png" alt="150x150" />
+        </div>
       </Container>
     </>
   )
